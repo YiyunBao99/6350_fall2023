@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B723A9C95BD82F3118C9F304 /* Pods_StockApp2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27207D359E932A4796925F82 /* Pods_StockApp2.framework */; };
 		D1961C122AE487B900343D29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1961C112AE487B900343D29 /* AppDelegate.swift */; };
 		D1961C142AE487B900343D29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1961C132AE487B900343D29 /* SceneDelegate.swift */; };
 		D1961C162AE487B900343D29 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1961C152AE487B900343D29 /* ViewController.swift */; };
 		D1961C192AE487B900343D29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1961C172AE487B900343D29 /* Main.storyboard */; };
 		D1961C1B2AE487BB00343D29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1961C1A2AE487BB00343D29 /* Assets.xcassets */; };
 		D1961C1E2AE487BB00343D29 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1961C1C2AE487BB00343D29 /* LaunchScreen.storyboard */; };
+		D1961C282AE48D9300343D29 /* AddStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1961C272AE48D9300343D29 /* AddStockViewController.swift */; };
+		D1961C2E2AE4937600343D29 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1961C2D2AE4937600343D29 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0514D532439571B51AF55CBA /* Pods-StockApp2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockApp2.debug.xcconfig"; path = "Target Support Files/Pods-StockApp2/Pods-StockApp2.debug.xcconfig"; sourceTree = "<group>"; };
+		0D0BC80971163A5AD78B226F /* Pods-StockApp2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockApp2.release.xcconfig"; path = "Target Support Files/Pods-StockApp2/Pods-StockApp2.release.xcconfig"; sourceTree = "<group>"; };
+		27207D359E932A4796925F82 /* Pods_StockApp2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockApp2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1961C0E2AE487B900343D29 /* StockApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1961C112AE487B900343D29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1961C132AE487B900343D29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +30,8 @@
 		D1961C1A2AE487BB00343D29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1961C1D2AE487BB00343D29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D1961C1F2AE487BB00343D29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1961C272AE48D9300343D29 /* AddStockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStockViewController.swift; sourceTree = "<group>"; };
+		D1961C2D2AE4937600343D29 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B723A9C95BD82F3118C9F304 /* Pods_StockApp2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		40652E289840401BDA629607 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27207D359E932A4796925F82 /* Pods_StockApp2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D1961C052AE487B900343D29 = {
 			isa = PBXGroup;
 			children = (
 				D1961C102AE487B900343D29 /* StockApp2 */,
 				D1961C0F2AE487B900343D29 /* Products */,
+				EE4F060F26444D3739815639 /* Pods */,
+				40652E289840401BDA629607 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +75,7 @@
 		D1961C102AE487B900343D29 /* StockApp2 */ = {
 			isa = PBXGroup;
 			children = (
+				D1961C292AE4933100343D29 /* Utils */,
 				D1961C112AE487B900343D29 /* AppDelegate.swift */,
 				D1961C132AE487B900343D29 /* SceneDelegate.swift */,
 				D1961C152AE487B900343D29 /* ViewController.swift */,
@@ -63,8 +83,26 @@
 				D1961C1A2AE487BB00343D29 /* Assets.xcassets */,
 				D1961C1C2AE487BB00343D29 /* LaunchScreen.storyboard */,
 				D1961C1F2AE487BB00343D29 /* Info.plist */,
+				D1961C272AE48D9300343D29 /* AddStockViewController.swift */,
 			);
 			path = StockApp2;
+			sourceTree = "<group>";
+		};
+		D1961C292AE4933100343D29 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D1961C2D2AE4937600343D29 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EE4F060F26444D3739815639 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0514D532439571B51AF55CBA /* Pods-StockApp2.debug.xcconfig */,
+				0D0BC80971163A5AD78B226F /* Pods-StockApp2.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +112,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1961C222AE487BB00343D29 /* Build configuration list for PBXNativeTarget "StockApp2" */;
 			buildPhases = (
+				BD3C8995785104ECAE2E4035 /* [CP] Check Pods Manifest.lock */,
 				D1961C0A2AE487B900343D29 /* Sources */,
 				D1961C0B2AE487B900343D29 /* Frameworks */,
 				D1961C0C2AE487B900343D29 /* Resources */,
+				0EAEFB4CD9A580AF7BCA22AB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +173,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0EAEFB4CD9A580AF7BCA22AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StockApp2/Pods-StockApp2-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StockApp2/Pods-StockApp2-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StockApp2/Pods-StockApp2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD3C8995785104ECAE2E4035 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StockApp2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D1961C0A2AE487B900343D29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1961C2E2AE4937600343D29 /* Constants.swift in Sources */,
 				D1961C162AE487B900343D29 /* ViewController.swift in Sources */,
 				D1961C122AE487B900343D29 /* AppDelegate.swift in Sources */,
 				D1961C142AE487B900343D29 /* SceneDelegate.swift in Sources */,
+				D1961C282AE48D9300343D29 /* AddStockViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +371,13 @@
 		};
 		D1961C232AE487BB00343D29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0514D532439571B51AF55CBA /* Pods-StockApp2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StockApp2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -306,19 +392,23 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = bao.yiy.northeastern.edu.StockApp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES;
 			};
 			name = Debug;
 		};
 		D1961C242AE487BB00343D29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D0BC80971163A5AD78B226F /* Pods-StockApp2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StockApp2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -333,9 +423,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = bao.yiy.northeastern.edu.StockApp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES;
 			};
 			name = Release;
 		};
